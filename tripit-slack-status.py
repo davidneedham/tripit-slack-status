@@ -70,10 +70,9 @@ else:
 # Setup the Slack API info.
 slack_url = 'https://slack.com/api/users.profile.set'
 slack_profile = '{"status_text":"' + status + '", "status_emoji": "' + emoji + '"}'
-slack_token = SLACK_API_TOKEN
 
 # Post the status to Slack.
-post_data = {'token': slack_token, 'profile': slack_profile}
+post_data = {'token': SLACK_API_TOKEN, 'profile': slack_profile}
 req = Request(slack_url, urlencode(post_data).encode())
 resp = urlopen(req)
 if resp.status == 200:
