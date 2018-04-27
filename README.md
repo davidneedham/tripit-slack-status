@@ -5,16 +5,17 @@ I travel a lot. In fact I'm a nomad, so I'm always on a trip somewhere, since I 
 
 ## Setup
 
-This script uses the following environment variables:
+Add the following variables to your `tripit-slack-status.py` starting at line 6:
 
-| Env Var | Description |
+| Var | Description |
 | --- | --- |
 | `TRIPIT_ICAL_URL` | **Required.** Your Tripit calendar is available from [your publishing settings](https://www.tripit.com/account/edit/section/publishing_options). Click the "Subscribe" link in the Calendar Feed section, then click the "Subscribe to calendar feed" option. |
-| `TRIPIT_HOME` | **Required.** Your home location. If you're not on a trip, this will be displayed as your current location. If you're on a trip and not immediately starting another, this will be shown as your next location. |
 | `SLACK_API_TOKEN` | **Required.** Generate a [Slack legacy token](https://api.slack.com/custom-integrations/legacy-tokens). Your token will begin with `xoxp-`. |
-| `SLACK_STATUS_EMOJI` | **Optional.** Slack status can include an emoji. Set your emoji (e.g. `:airplane:`). |
+| `TRIPIT_HOME` | **Required.** Your home location. |
 
-After you set your environment variables, install the `icalendar` library:
+You may also want to change your default "at home" status on line 64. You may also change the emoji, as well as the specific format of the statuses in this section.
+
+Next, install the `icalendar` library:
 `pip install -r requirements.txt`
 
 Then run the script:
