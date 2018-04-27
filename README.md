@@ -13,7 +13,7 @@ Add the following variables to your `tripit-slack-status.py` starting at line 6:
 | `SLACK_API_TOKEN` | **Required.** Generate a [Slack legacy token](https://api.slack.com/custom-integrations/legacy-tokens). Your token will begin with `xoxp-`. |
 | `TRIPIT_HOME` | **Required.** Your home location. |
 
-You may also want to change your default "at home" status on line 64. You may also change the emoji, as well as the specific format of the statuses in this section.
+You may also want to change your default "at home" status on line 64, as well as the emoji, and the specific format of the statuses in this section.
 
 Next, install the `icalendar` library:
 `pip install -r requirements.txt`
