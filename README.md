@@ -10,8 +10,8 @@ Add the following variables to your `tripit-slack-status.py` starting at line 6:
 | Var | Description |
 | --- | --- |
 | `TRIPIT_ICAL_URL` | **Required.** Your Tripit calendar is available from [your publishing settings](https://www.tripit.com/account/edit/section/publishing_options). Click the "Subscribe" link in the Calendar Feed section, then click the "Subscribe to calendar feed" option. |
-| `SLACK_API_TOKEN` | **Required.** Generate a [Slack legacy token](https://api.slack.com/custom-integrations/legacy-tokens). Your token will begin with `xoxp-`. |
 | `TRIPIT_HOME` | **Required.** Your home location. |
+| `SLACK_API_TOKEN` | **Required.** Generate a [Slack legacy token](https://api.slack.com/custom-integrations/legacy-tokens). Your token will begin with `xoxp-`. Add as many tokens and names as you want to update simultaneously. Remove any extra rows that you don't need. |
 
 You may also want to change your default "at home" status on line 64, as well as the emoji, and the specific format of the statuses in this section.
 
